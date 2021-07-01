@@ -1,11 +1,8 @@
 package org.odk.collect.android.widgets;
 
 import android.content.Intent;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.provider.MediaStore;
 import android.view.View;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.core.util.Pair;
@@ -30,13 +27,10 @@ import java.io.File;
 
 import static java.util.Collections.singletonList;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.notNullValue;
 import static org.mockito.Mockito.when;
 import static org.odk.collect.android.support.CollectHelpers.overrideReferenceManager;
 import static org.odk.collect.android.support.CollectHelpers.setupFakeReferenceManager;
-import static org.robolectric.Shadows.shadowOf;
 
 /**
  *  @author James Knight
@@ -123,45 +117,6 @@ public class AnnotateWidgetTest extends FileWidgetTest<AnnotateWidget> {
         assertThat(getSpyWidget().annotateButton.getVisibility(), is(View.GONE));
     }
 
-    @Test
-    public void whenPromptHasDefaultAnswer_showsInImageView() throws Exception {
-        String imagePath = File.createTempFile("default", ".bmp").getAbsolutePath();
-        overrideReferenceManager(setupFakeReferenceManager(singletonList(
-                new Pair<>(DrawWidgetTest.DEFAULT_IMAGE_ANSWER, imagePath)
-        )));
-
-        formEntryPrompt = new MockFormEntryPromptBuilder()
-                .withAnswerDisplayText(DrawWidgetTest.DEFAULT_IMAGE_ANSWER)
-                .build();
-
-        AnnotateWidget widget = createWidget();
-        ImageView imageView = widget.getImageView();
-        assertThat(imageView, notNullValue());
-        Drawable drawable = imageView.getDrawable();
-        assertThat(drawable, notNullValue());
-
-        String loadedPath = shadowOf(((BitmapDrawable) drawable).getBitmap()).getCreatedFromPath();
-        assertThat(loadedPath, equalTo(imagePath));
-    }
-
-    @Test
-    public void whenPromptHasCurrentAnswer_showsInImageView() throws Exception {
-        String imagePath = File.createTempFile("current", ".bmp").getAbsolutePath();
-        currentFile = new File(imagePath);
-
-        formEntryPrompt = new MockFormEntryPromptBuilder()
-                .withAnswerDisplayText(DrawWidgetTest.USER_SPECIFIED_IMAGE_ANSWER)
-                .build();
-
-        AnnotateWidget widget = createWidget();
-        ImageView imageView = widget.getImageView();
-        assertThat(imageView, notNullValue());
-        Drawable drawable = imageView.getDrawable();
-        assertThat(drawable, notNullValue());
-
-        String loadedPath = shadowOf(((BitmapDrawable) drawable).getBitmap()).getCreatedFromPath();
-        assertThat(loadedPath, equalTo(imagePath));
-    }
 
     @Test
     public void markupButtonShouldBeDisabledIfImageAbsent() throws Exception {

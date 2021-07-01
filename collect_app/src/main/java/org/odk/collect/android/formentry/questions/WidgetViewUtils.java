@@ -2,7 +2,6 @@ package org.odk.collect.android.formentry.questions;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -63,13 +62,12 @@ public class WidgetViewUtils {
         return textView;
     }
 
-    public static ImageView createAnswerImageView(Context context, Bitmap bitmap) {
+    public static ImageView createAnswerImageView(Context context) {
         final ImageView imageView = new ImageView(context);
         imageView.setId(View.generateViewId());
         imageView.setTag("ImageView");
         imageView.setPadding(10, 10, 10, 10);
         imageView.setAdjustViewBounds(true);
-        imageView.setImageBitmap(bitmap);
         return imageView;
     }
 

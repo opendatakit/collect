@@ -19,7 +19,6 @@ package org.odk.collect.android.utilities;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Matrix;
 import androidx.exifinterface.media.ExifInterface;
 
 import org.javarosa.core.model.instance.TreeElement;
@@ -49,9 +48,8 @@ public class ImageConverter {
             Timber.w(e);
         }
 
-        rotateImageIfNeeded(imagePath);
         scaleDownImageIfNeeded(imagePath, questionWidget, context, imageSizeMode);
-        
+
         if (exif != null) {
             try {
                 exif.saveAttributes();
@@ -131,48 +129,6 @@ public class ImageConverter {
                 FileUtils.saveBitmapToFile(image, imagePath);
             }
         }
-    }
-
-    /**
-     * Sometimes an image might be taken up sideways.
-     * https://github.com/getodk/collect/issues/36
-     */
-    private static void rotateImageIfNeeded(String imagePath) {
-        ExifInterface exif = null;
-        try {
-            exif = new ExifInterface(imagePath);
-        } catch (IOException e) {
-            Timber.w(e);
-        }
-
-        if (exif != null) {
-            Bitmap image = FileUtils.getBitmap(imagePath, new BitmapFactory.Options());
-
-            int orientation = exif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL);
-            switch (orientation) {
-                case ExifInterface.ORIENTATION_ROTATE_90:
-                    rotateBitmap(image, 90, imagePath);
-                    break;
-                case ExifInterface.ORIENTATION_ROTATE_180:
-                    rotateBitmap(image, 180, imagePath);
-                    break;
-
-                case ExifInterface.ORIENTATION_ROTATE_270:
-                    rotateBitmap(image, 270, imagePath);
-                    break;
-            }
-        }
-    }
-
-    private static void rotateBitmap(Bitmap image, int degrees, String imagePath) {
-        try {
-            Matrix matrix = new Matrix();
-            matrix.postRotate(degrees);
-            image = Bitmap.createBitmap(image, 0, 0, image.getWidth(), image.getHeight(), matrix, true);
-        } catch (OutOfMemoryError e) {
-            Timber.w(e);
-        }
-        FileUtils.saveBitmapToFile(image, imagePath);
     }
 
     public static Bitmap scaleImageToNewWidth(Bitmap bitmap, int newWidth) {

@@ -311,87 +311,6 @@ public class ImageConverterTest {
     }
 
     @Test
-    public void rotateImage1() {
-        Map<String, String> attributes = new HashMap<>();
-        attributes.put(ExifInterface.TAG_ORIENTATION, String.valueOf(ExifInterface.ORIENTATION_ROTATE_90));
-
-        generalSettings.save("image_size", "original_image_size");
-        saveTestBitmap(3000, 4000, attributes);
-        ImageConverter.execute(testImagePath, getTestImageWidget(), Collect.getInstance(), IMAGE_SIZE_ORIGINAL);
-
-        Bitmap image = FileUtils.getBitmap(testImagePath, new BitmapFactory.Options());
-        assertEquals(4000, image.getWidth());
-        assertEquals(3000, image.getHeight());
-    }
-
-    @Test
-    public void rotateImage2() {
-        Map<String, String> attributes = new HashMap<>();
-        attributes.put(ExifInterface.TAG_ORIENTATION, String.valueOf(ExifInterface.ORIENTATION_ROTATE_270));
-
-        generalSettings.save("image_size", "original_image_size");
-        saveTestBitmap(3000, 4000, attributes);
-        ImageConverter.execute(testImagePath, getTestImageWidget(), Collect.getInstance(), IMAGE_SIZE_ORIGINAL);
-
-        Bitmap image = FileUtils.getBitmap(testImagePath, new BitmapFactory.Options());
-        assertEquals(4000, image.getWidth());
-        assertEquals(3000, image.getHeight());
-    }
-
-    @Test
-    public void rotateImage3() {
-        Map<String, String> attributes = new HashMap<>();
-        attributes.put(ExifInterface.TAG_ORIENTATION, String.valueOf(ExifInterface.ORIENTATION_ROTATE_180));
-
-        generalSettings.save("image_size", "original_image_size");
-        saveTestBitmap(3000, 4000, attributes);
-        ImageConverter.execute(testImagePath, getTestImageWidget(), Collect.getInstance(), IMAGE_SIZE_ORIGINAL);
-
-        Bitmap image = FileUtils.getBitmap(testImagePath, new BitmapFactory.Options());
-        assertEquals(3000, image.getWidth());
-        assertEquals(4000, image.getHeight());
-    }
-
-    @Test
-    public void rotateImage4() {
-        Map<String, String> attributes = new HashMap<>();
-        attributes.put(ExifInterface.TAG_ORIENTATION, String.valueOf(ExifInterface.ORIENTATION_UNDEFINED));
-
-        generalSettings.save("image_size", "original_image_size");
-        saveTestBitmap(3000, 4000, attributes);
-        ImageConverter.execute(testImagePath, getTestImageWidget(), Collect.getInstance(), IMAGE_SIZE_ORIGINAL);
-
-        Bitmap image = FileUtils.getBitmap(testImagePath, new BitmapFactory.Options());
-        assertEquals(3000, image.getWidth());
-        assertEquals(4000, image.getHeight());
-    }
-
-    @Test
-    public void rotateImage5() {
-        generalSettings.save("image_size", "original_image_size");
-        saveTestBitmap(3000, 4000);
-        ImageConverter.execute(testImagePath, getTestImageWidget(), Collect.getInstance(), IMAGE_SIZE_ORIGINAL);
-
-        Bitmap image = FileUtils.getBitmap(testImagePath, new BitmapFactory.Options());
-        assertEquals(3000, image.getWidth());
-        assertEquals(4000, image.getHeight());
-    }
-
-    @Test
-    public void rotateAndScaleDownImage() {
-        Map<String, String> attributes = new HashMap<>();
-        attributes.put(ExifInterface.TAG_ORIENTATION, String.valueOf(ExifInterface.ORIENTATION_ROTATE_90));
-
-        generalSettings.save("image_size", "original_image_size");
-        saveTestBitmap(3000, 4000, attributes);
-        ImageConverter.execute(testImagePath, getTestImageWidget(XML_OPENROSA_NAMESPACE, "max-pixels", "2000"), Collect.getInstance(), IMAGE_SIZE_ORIGINAL);
-
-        Bitmap image = FileUtils.getBitmap(testImagePath, new BitmapFactory.Options());
-        assertEquals(2000, image.getWidth());
-        assertEquals(1500, image.getHeight());
-    }
-
-    @Test
     public void scaleImageToNewWidthTest() {
         saveTestBitmap(2000, 1000);
         Bitmap image = FileUtils.getBitmap(testImagePath, new BitmapFactory.Options());
@@ -419,7 +338,7 @@ public class ImageConverterTest {
     }
 
     @Test
-    public void keepExifTest1AfterScaleAndRotation() {
+    public void keepExifTest1AfterScaling() {
         Map<String, String> attributes = new HashMap<>();
         attributes.put(ExifInterface.TAG_ARTIST, ExifInterface.TAG_ARTIST);
         attributes.put(ExifInterface.TAG_DATETIME, ExifInterface.TAG_DATETIME);
@@ -459,6 +378,16 @@ public class ImageConverterTest {
                     break;
             }
         }
+    }
+
+    @Test
+    public void verifyNoRotationAppliedForExifRotation() {
+        Map<String, String> attributes = new HashMap<>();
+        attributes.put(ExifInterface.TAG_ORIENTATION, String.valueOf(ExifInterface.ORIENTATION_ROTATE_90));
+        saveTestBitmap(3000, 4000, attributes);
+        Bitmap image = FileUtils.getBitmap(testImagePath, new BitmapFactory.Options());
+        assertEquals(3000, image.getWidth());
+        assertEquals(4000, image.getHeight());
     }
 
     // https://stackoverflow.com/a/55252228/5479029

@@ -173,13 +173,13 @@ public class DrawActivity extends CollectAbstractActivity {
                 savepointImage = new File(savepoint);
                 if (!savepointImage.exists() && refImage != null
                         && refImage.exists()) {
-                    FileUtils.copyFile(refImage, savepointImage);
+                    FileUtils.copyImageAndApplyExifRotation(refImage, savepointImage);
                 }
             } else {
                 savepointImage = new File(storagePathProvider.getTmpImageFilePath());
                 savepointImage.delete();
                 if (refImage != null && refImage.exists()) {
-                    FileUtils.copyFile(refImage, savepointImage);
+                    FileUtils.copyImageAndApplyExifRotation(refImage, savepointImage);
                 }
             }
             uri = (Uri) extras.get(EXTRA_OUTPUT);
@@ -249,7 +249,7 @@ public class DrawActivity extends CollectAbstractActivity {
         savepointImage.delete();
         if (!OPTION_SIGNATURE.equals(loadOption) && refImage != null
                 && refImage.exists()) {
-            FileUtils.copyFile(refImage, savepointImage);
+            FileUtils.copyImageAndApplyExifRotation(refImage, savepointImage);
         }
         drawView.reset();
         drawView.invalidate();
