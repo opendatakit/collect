@@ -385,6 +385,8 @@ public class ImageConverterTest {
         Map<String, String> attributes = new HashMap<>();
         attributes.put(ExifInterface.TAG_ORIENTATION, String.valueOf(ExifInterface.ORIENTATION_ROTATE_90));
         saveTestBitmap(3000, 4000, attributes);
+        ImageConverter.execute(testImagePath, getTestImageWidget(), Collect.getInstance(), IMAGE_SIZE_ORIGINAL);
+
         Bitmap image = FileUtils.getBitmap(testImagePath, new BitmapFactory.Options());
         assertEquals(3000, image.getWidth());
         assertEquals(4000, image.getHeight());
