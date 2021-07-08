@@ -133,6 +133,12 @@ public class ServerPreferencesFragment extends BaseGeneralPreferencesFragment im
         serverUrlPreference.setOnPreferenceChangeListener(createChangeListener());
         serverUrlPreference.setSummary(serverUrlPreference.getText());
 
+        serverUrlPreference.setOnBindEditTextListener(editText -> {
+            editText.selectAll();
+            editText.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_drop_down, 0);
+            editText.setFilters(new InputFilter[]{new ControlCharacterFilter(), new WhitespaceFilter()});
+        });
+
         usernamePreference.setOnPreferenceChangeListener(createChangeListener());
         usernamePreference.setSummary(usernamePreference.getText());
 
