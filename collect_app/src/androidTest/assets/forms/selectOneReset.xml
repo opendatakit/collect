@@ -1,0 +1,1365 @@
+<?xml version="1.0"?>
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa"
+    xmlns:odk="http://www.opendatakit.org/xforms" xmlns="http://www.w3.org/2002/xforms">
+    <h:head>
+        <h:title>selectOneReset</h:title>
+        <model odk:xforms-version="1.0.0">
+            <instance>
+                <data id="selectOneReset" version="2021-07-04 E">
+                    <section-0 />
+                    <state_A-0>tx</state_A-0>
+                    <county_A-0>cameron</county_A-0>
+                    <city_A-0>brownsville</city_A-0>
+                    <show_ward_A-0>yes</show_ward_A-0>
+                    <ward_A-0>ward_n</ward_A-0>
+                    <group_B-0>
+                        <state_B-0>tx</state_B-0>
+                        <county_B-0>cameron</county_B-0>
+                        <city_B-0>brownsville</city_B-0>
+                        <show_ward_B-0>yes</show_ward_B-0>
+                        <ward_B-0>ward_n</ward_B-0>
+                        <group_C-0>
+                            <state_C-0>tx</state_C-0>
+                            <county_C-0>cameron</county_C-0>
+                            <city_C-0>brownsville</city_C-0>
+                            <show_ward_C-0>yes</show_ward_C-0>
+                            <ward_C-0>ward_n</ward_C-0>
+                        </group_C-0>
+                    </group_B-0>
+                    <group_D-0>
+                        <state_D-0>tx</state_D-0>
+                        <county_D-0>cameron</county_D-0>
+                        <city_D-0>brownsville</city_D-0>
+                        <show_ward_D-0>yes</show_ward_D-0>
+                        <ward_D-0>ward_n</ward_D-0>
+                        <group_E-0>
+                            <state_E-0>tx</state_E-0>
+                            <county_E-0>cameron</county_E-0>
+                            <city_E-0>brownsville</city_E-0>
+                            <show_ward_E-0>yes</show_ward_E-0>
+                            <ward_E-0>ward_n</ward_E-0>
+                        </group_E-0>
+                    </group_D-0>
+                    <section-1 />
+                    <state_A-1>tx</state_A-1>
+                    <county_A-1>cameron</county_A-1>
+                    <city_A-1>brownsville</city_A-1>
+                    <show_ward_A-1>yes</show_ward_A-1>
+                    <ward_A-1>ward_n</ward_A-1>
+                    <group_B-1>
+                        <state_B-1>tx</state_B-1>
+                        <county_B-1>cameron</county_B-1>
+                        <city_B-1>brownsville</city_B-1>
+                        <show_ward_B-1>yes</show_ward_B-1>
+                        <ward_B-1>ward_n</ward_B-1>
+                        <group_C-1>
+                            <state_C-1>tx</state_C-1>
+                            <county_C-1>cameron</county_C-1>
+                            <city_C-1>brownsville</city_C-1>
+                            <show_ward_C-1>yes</show_ward_C-1>
+                            <ward_C-1>ward_n</ward_C-1>
+                        </group_C-1>
+                    </group_B-1>
+                    <group_D-1>
+                        <state_D-1>tx</state_D-1>
+                        <county_D-1>cameron</county_D-1>
+                        <city_D-1>brownsville</city_D-1>
+                        <show_ward_D-1>yes</show_ward_D-1>
+                        <ward_D-1>ward_n</ward_D-1>
+                        <group_E-1>
+                            <state_E-1>tx</state_E-1>
+                            <county_E-1>cameron</county_E-1>
+                            <city_E-1>brownsville</city_E-1>
+                            <show_ward_E-1>yes</show_ward_E-1>
+                            <ward_E-1>ward_n</ward_E-1>
+                        </group_E-1>
+                    </group_D-1>
+                    <section-2 />
+                    <state_A-2>tx</state_A-2>
+                    <county_A-2>cameron</county_A-2>
+                    <city_A-2>brownsville</city_A-2>
+                    <show_ward_A-2>yes</show_ward_A-2>
+                    <ward_A-2>ward_n</ward_A-2>
+                    <group_B-2>
+                        <state_B-2>tx</state_B-2>
+                        <county_B-2>cameron</county_B-2>
+                        <city_B-2>brownsville</city_B-2>
+                        <show_ward_B-2>yes</show_ward_B-2>
+                        <ward_B-2>ward_n</ward_B-2>
+                        <group_C-2>
+                            <state_C-2>tx</state_C-2>
+                            <county_C-2>cameron</county_C-2>
+                            <city_C-2>brownsville</city_C-2>
+                            <show_ward_C-2>yes</show_ward_C-2>
+                            <ward_C-2>ward_n</ward_C-2>
+                        </group_C-2>
+                    </group_B-2>
+                    <group_D-2>
+                        <state_D-2>tx</state_D-2>
+                        <county_D-2>cameron</county_D-2>
+                        <city_D-2>brownsville</city_D-2>
+                        <show_ward_D-2>yes</show_ward_D-2>
+                        <ward_D-2>ward_n</ward_D-2>
+                        <group_E-2>
+                            <state_E-2>tx</state_E-2>
+                            <county_E-2>cameron</county_E-2>
+                            <city_E-2>brownsville</city_E-2>
+                            <show_ward_E-2>yes</show_ward_E-2>
+                            <ward_E-2>ward_n</ward_E-2>
+                        </group_E-2>
+                    </group_D-2>
+                    <section-3 />
+                    <state_A-3>tx</state_A-3>
+                    <county_A-3>cameron</county_A-3>
+                    <city_A-3>brownsville</city_A-3>
+                    <show_ward_A-3>yes</show_ward_A-3>
+                    <ward_A-3>ward_n</ward_A-3>
+                    <group_B-3>
+                        <state_B-3>tx</state_B-3>
+                        <county_B-3>cameron</county_B-3>
+                        <city_B-3>brownsville</city_B-3>
+                        <show_ward_B-3>yes</show_ward_B-3>
+                        <ward_B-3>ward_n</ward_B-3>
+                        <group_C-3>
+                            <state_C-3>tx</state_C-3>
+                            <county_C-3>cameron</county_C-3>
+                            <city_C-3>brownsville</city_C-3>
+                            <show_ward_C-3>yes</show_ward_C-3>
+                            <ward_C-3>ward_n</ward_C-3>
+                        </group_C-3>
+                    </group_B-3>
+                    <group_D-3>
+                        <state_D-3>tx</state_D-3>
+                        <county_D-3>cameron</county_D-3>
+                        <city_D-3>brownsville</city_D-3>
+                        <show_ward_D-3>yes</show_ward_D-3>
+                        <ward_D-3>ward_n</ward_D-3>
+                        <group_E-3>
+                            <state_E-3>tx</state_E-3>
+                            <county_E-3>cameron</county_E-3>
+                            <city_E-3>brownsville</city_E-3>
+                            <show_ward_E-3>yes</show_ward_E-3>
+                            <ward_E-3>ward_n</ward_E-3>
+                        </group_E-3>
+                    </group_D-3>
+                    <meta>
+                        <instanceID />
+                    </meta>
+                </data>
+            </instance>
+            <instance id="yes_no">
+                <root>
+                    <item>
+                        <label>no</label>
+                        <name>no</name>
+                    </item>
+                    <item>
+                        <label>yes</label>
+                        <name>yes</name>
+                    </item>
+                </root>
+            </instance>
+            <instance id="states">
+                <root>
+                    <item>
+                        <label>Texas</label>
+                        <name>tx</name>
+                    </item>
+                    <item>
+                        <label>Washington</label>
+                        <name>wa</name>
+                    </item>
+                </root>
+            </instance>
+            <instance id="counties">
+                <root>
+                    <item>
+                        <label>King</label>
+                        <name>king</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <label>Pierce</label>
+                        <name>pierce</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <label>King</label>
+                        <name>king</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <label>Cameron</label>
+                        <name>cameron</name>
+                        <state>tx</state>
+                    </item>
+                </root>
+            </instance>
+            <instance id="cities">
+                <root>
+                    <item>
+                        <county>king</county>
+                        <label>Dumont</label>
+                        <name>dumont</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <county>king</county>
+                        <label>Finney</label>
+                        <name>finney</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <county>cameron</county>
+                        <label>Brownsville</label>
+                        <name>brownsville</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <county>cameron</county>
+                        <label>Harlingen</label>
+                        <name>harlingen</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <county>king</county>
+                        <label>Seattle</label>
+                        <name>seattle</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <county>king</county>
+                        <label>Redmond</label>
+                        <name>redmond</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <county>pierce</county>
+                        <label>Tacoma</label>
+                        <name>tacoma</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <county>pierce</county>
+                        <label>Puyallup</label>
+                        <name>puyallup</name>
+                        <state>wa</state>
+                    </item>
+                </root>
+            </instance>
+            <instance id="wards">
+                <root>
+                    <item>
+                        <city>dumont</city>
+                        <county>king</county>
+                        <label>North</label>
+                        <name>ward_n</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <city>dumont</city>
+                        <county>king</county>
+                        <label>South</label>
+                        <name>ward_s</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <city>finney</city>
+                        <county>king</county>
+                        <label>East</label>
+                        <name>ward_e</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <city>finney</city>
+                        <county>king</county>
+                        <label>West</label>
+                        <name>ward_w</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <city>brownsville</city>
+                        <county>cameron</county>
+                        <label>North</label>
+                        <name>ward_n</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <city>brownsville</city>
+                        <county>cameron</county>
+                        <label>South</label>
+                        <name>ward_s</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <city>harlingen</city>
+                        <county>cameron</county>
+                        <label>East</label>
+                        <name>ward_e</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <city>harlingen</city>
+                        <county>cameron</county>
+                        <label>West</label>
+                        <name>ward_w</name>
+                        <state>tx</state>
+                    </item>
+                    <item>
+                        <city>seattle</city>
+                        <county>king</county>
+                        <label>North</label>
+                        <name>ward_n</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <city>seattle</city>
+                        <county>king</county>
+                        <label>South</label>
+                        <name>ward_s</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <city>redmond</city>
+                        <county>king</county>
+                        <label>East</label>
+                        <name>ward_e</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <city>redmond</city>
+                        <county>king</county>
+                        <label>West</label>
+                        <name>ward_w</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <city>tacoma</city>
+                        <county>pierce</county>
+                        <label>North</label>
+                        <name>ward_n</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <city>tacoma</city>
+                        <county>pierce</county>
+                        <label>South</label>
+                        <name>ward_s</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <city>puyallup</city>
+                        <county>pierce</county>
+                        <label>East</label>
+                        <name>ward_e</name>
+                        <state>wa</state>
+                    </item>
+                    <item>
+                        <city>puyallup</city>
+                        <county>pierce</county>
+                        <label>West</label>
+                        <name>ward_w</name>
+                        <state>wa</state>
+                    </item>
+                </root>
+            </instance>
+            <bind nodeset="/data/section-0" readonly="true()" type="string" />
+            <bind nodeset="/data/state_A-0" type="string" />
+            <bind nodeset="/data/county_A-0" type="string" />
+            <bind nodeset="/data/city_A-0" type="string" />
+            <bind nodeset="/data/show_ward_A-0" type="string" />
+            <bind nodeset="/data/ward_A-0" relevant=" /data/show_ward_A-0 ='yes'" type="string" />
+            <bind nodeset="/data/group_B-0/state_B-0" type="string" />
+            <bind nodeset="/data/group_B-0/county_B-0" type="string" />
+            <bind nodeset="/data/group_B-0/city_B-0" type="string" />
+            <bind nodeset="/data/group_B-0/show_ward_B-0" type="string" />
+            <bind nodeset="/data/group_B-0/ward_B-0"
+                relevant=" /data/group_B-0/show_ward_B-0 ='yes'" type="string" />
+            <bind nodeset="/data/group_B-0/group_C-0/state_C-0" type="string" />
+            <bind nodeset="/data/group_B-0/group_C-0/county_C-0" type="string" />
+            <bind nodeset="/data/group_B-0/group_C-0/city_C-0" type="string" />
+            <bind nodeset="/data/group_B-0/group_C-0/show_ward_C-0" type="string" />
+            <bind nodeset="/data/group_B-0/group_C-0/ward_C-0"
+                relevant=" /data/group_B-0/group_C-0/show_ward_C-0 ='yes'" type="string" />
+            <bind nodeset="/data/group_D-0/state_D-0" type="string" />
+            <bind nodeset="/data/group_D-0/county_D-0" type="string" />
+            <bind nodeset="/data/group_D-0/city_D-0" type="string" />
+            <bind nodeset="/data/group_D-0/show_ward_D-0" type="string" />
+            <bind nodeset="/data/group_D-0/ward_D-0"
+                relevant=" /data/group_D-0/show_ward_D-0 ='yes'" type="string" />
+            <bind nodeset="/data/group_D-0/group_E-0/state_E-0" type="string" />
+            <bind nodeset="/data/group_D-0/group_E-0/county_E-0" type="string" />
+            <bind nodeset="/data/group_D-0/group_E-0/city_E-0" type="string" />
+            <bind nodeset="/data/group_D-0/group_E-0/show_ward_E-0" type="string" />
+            <bind nodeset="/data/group_D-0/group_E-0/ward_E-0"
+                relevant=" /data/group_D-0/group_E-0/show_ward_E-0 ='yes'" type="string" />
+            <bind nodeset="/data/section-1" readonly="true()" type="string" />
+            <bind nodeset="/data/state_A-1" type="string" />
+            <bind nodeset="/data/county_A-1" type="string" />
+            <bind nodeset="/data/city_A-1" type="string" />
+            <bind nodeset="/data/show_ward_A-1" type="string" />
+            <bind nodeset="/data/ward_A-1" relevant=" /data/show_ward_A-1 ='yes'" type="string" />
+            <bind nodeset="/data/group_B-1/state_B-1" type="string" />
+            <bind nodeset="/data/group_B-1/county_B-1" type="string" />
+            <bind nodeset="/data/group_B-1/city_B-1" type="string" />
+            <bind nodeset="/data/group_B-1/show_ward_B-1" type="string" />
+            <bind nodeset="/data/group_B-1/ward_B-1"
+                relevant=" /data/group_B-1/show_ward_B-1 ='yes'" type="string" />
+            <bind nodeset="/data/group_B-1/group_C-1/state_C-1" type="string" />
+            <bind nodeset="/data/group_B-1/group_C-1/county_C-1" type="string" />
+            <bind nodeset="/data/group_B-1/group_C-1/city_C-1" type="string" />
+            <bind nodeset="/data/group_B-1/group_C-1/show_ward_C-1" type="string" />
+            <bind nodeset="/data/group_B-1/group_C-1/ward_C-1"
+                relevant=" /data/group_B-1/group_C-1/show_ward_C-1 ='yes'" type="string" />
+            <bind nodeset="/data/group_D-1/state_D-1" type="string" />
+            <bind nodeset="/data/group_D-1/county_D-1" type="string" />
+            <bind nodeset="/data/group_D-1/city_D-1" type="string" />
+            <bind nodeset="/data/group_D-1/show_ward_D-1" type="string" />
+            <bind nodeset="/data/group_D-1/ward_D-1"
+                relevant=" /data/group_D-1/show_ward_D-1 ='yes'" type="string" />
+            <bind nodeset="/data/group_D-1/group_E-1/state_E-1" type="string" />
+            <bind nodeset="/data/group_D-1/group_E-1/county_E-1" type="string" />
+            <bind nodeset="/data/group_D-1/group_E-1/city_E-1" type="string" />
+            <bind nodeset="/data/group_D-1/group_E-1/show_ward_E-1" type="string" />
+            <bind nodeset="/data/group_D-1/group_E-1/ward_E-1"
+                relevant=" /data/group_D-1/group_E-1/show_ward_E-1 ='yes'" type="string" />
+            <bind nodeset="/data/section-2" readonly="true()" type="string" />
+            <bind nodeset="/data/state_A-2" type="string" />
+            <bind nodeset="/data/county_A-2" type="string" />
+            <bind nodeset="/data/city_A-2" type="string" />
+            <bind nodeset="/data/show_ward_A-2" type="string" />
+            <bind nodeset="/data/ward_A-2" relevant=" /data/show_ward_A-2 ='yes'" type="string" />
+            <bind nodeset="/data/group_B-2/state_B-2" type="string" />
+            <bind nodeset="/data/group_B-2/county_B-2" type="string" />
+            <bind nodeset="/data/group_B-2/city_B-2" type="string" />
+            <bind nodeset="/data/group_B-2/show_ward_B-2" type="string" />
+            <bind nodeset="/data/group_B-2/ward_B-2"
+                relevant=" /data/group_B-2/show_ward_B-2 ='yes'" type="string" />
+            <bind nodeset="/data/group_B-2/group_C-2/state_C-2" type="string" />
+            <bind nodeset="/data/group_B-2/group_C-2/county_C-2" type="string" />
+            <bind nodeset="/data/group_B-2/group_C-2/city_C-2" type="string" />
+            <bind nodeset="/data/group_B-2/group_C-2/show_ward_C-2" type="string" />
+            <bind nodeset="/data/group_B-2/group_C-2/ward_C-2"
+                relevant=" /data/group_B-2/group_C-2/show_ward_C-2 ='yes'" type="string" />
+            <bind nodeset="/data/group_D-2/state_D-2" type="string" />
+            <bind nodeset="/data/group_D-2/county_D-2" type="string" />
+            <bind nodeset="/data/group_D-2/city_D-2" type="string" />
+            <bind nodeset="/data/group_D-2/show_ward_D-2" type="string" />
+            <bind nodeset="/data/group_D-2/ward_D-2"
+                relevant=" /data/group_D-2/show_ward_D-2 ='yes'" type="string" />
+            <bind nodeset="/data/group_D-2/group_E-2/state_E-2" type="string" />
+            <bind nodeset="/data/group_D-2/group_E-2/county_E-2" type="string" />
+            <bind nodeset="/data/group_D-2/group_E-2/city_E-2" type="string" />
+            <bind nodeset="/data/group_D-2/group_E-2/show_ward_E-2" type="string" />
+            <bind nodeset="/data/group_D-2/group_E-2/ward_E-2"
+                relevant=" /data/group_D-2/group_E-2/show_ward_E-2 ='yes'" type="string" />
+            <bind nodeset="/data/section-3" readonly="true()" type="string" />
+            <bind nodeset="/data/state_A-3" type="string" />
+            <bind nodeset="/data/county_A-3" type="string" />
+            <bind nodeset="/data/city_A-3" type="string" />
+            <bind nodeset="/data/show_ward_A-3" type="string" />
+            <bind nodeset="/data/ward_A-3" relevant=" /data/show_ward_A-3 ='yes'" type="string" />
+            <bind nodeset="/data/group_B-3/state_B-3" type="string" />
+            <bind nodeset="/data/group_B-3/county_B-3" type="string" />
+            <bind nodeset="/data/group_B-3/city_B-3" type="string" />
+            <bind nodeset="/data/group_B-3/show_ward_B-3" type="string" />
+            <bind nodeset="/data/group_B-3/ward_B-3"
+                relevant=" /data/group_B-3/show_ward_B-3 ='yes'" type="string" />
+            <bind nodeset="/data/group_B-3/group_C-3/state_C-3" type="string" />
+            <bind nodeset="/data/group_B-3/group_C-3/county_C-3" type="string" />
+            <bind nodeset="/data/group_B-3/group_C-3/city_C-3" type="string" />
+            <bind nodeset="/data/group_B-3/group_C-3/show_ward_C-3" type="string" />
+            <bind nodeset="/data/group_B-3/group_C-3/ward_C-3"
+                relevant=" /data/group_B-3/group_C-3/show_ward_C-3 ='yes'" type="string" />
+            <bind nodeset="/data/group_D-3/state_D-3" type="string" />
+            <bind nodeset="/data/group_D-3/county_D-3" type="string" />
+            <bind nodeset="/data/group_D-3/city_D-3" type="string" />
+            <bind nodeset="/data/group_D-3/show_ward_D-3" type="string" />
+            <bind nodeset="/data/group_D-3/ward_D-3"
+                relevant=" /data/group_D-3/show_ward_D-3 ='yes'" type="string" />
+            <bind nodeset="/data/group_D-3/group_E-3/state_E-3" type="string" />
+            <bind nodeset="/data/group_D-3/group_E-3/county_E-3" type="string" />
+            <bind nodeset="/data/group_D-3/group_E-3/city_E-3" type="string" />
+            <bind nodeset="/data/group_D-3/group_E-3/show_ward_E-3" type="string" />
+            <bind nodeset="/data/group_D-3/group_E-3/ward_E-3"
+                relevant=" /data/group_D-3/group_E-3/show_ward_E-3 ='yes'" type="string" />
+            <bind nodeset="/data/meta/instanceID" readonly="true()" type="string"
+                jr:preload="uid" />
+        </model>
+    </h:head>
+    <h:body>
+        <input ref="/data/section-0">
+            <label>section-0</label>
+        </input>
+        <select1 ref="/data/state_A-0">
+            <label>state_A-0</label>
+            <item>
+                <label>Texas</label>
+                <value>tx</value>
+            </item>
+            <item>
+                <label>Washington</label>
+                <value>wa</value>
+            </item>
+        </select1>
+        <select1 ref="/data/county_A-0">
+            <label>county_A-0</label>
+            <itemset nodeset="instance('counties')/root/item[state= /data/state_A-0 ]">
+                <value ref="name" />
+                <label ref="label" />
+            </itemset>
+        </select1>
+        <select1 ref="/data/city_A-0">
+            <label>city_A-0</label>
+            <itemset
+                nodeset="instance('cities')/root/item[state= /data/state_A-0  and county= /data/county_A-0 ]">
+                <value ref="name" />
+                <label ref="label" />
+            </itemset>
+        </select1>
+        <select1 ref="/data/show_ward_A-0">
+            <label>show-ward_A-0</label>
+            <item>
+                <label>no</label>
+                <value>no</value>
+            </item>
+            <item>
+                <label>yes</label>
+                <value>yes</value>
+            </item>
+        </select1>
+        <select1 ref="/data/ward_A-0">
+            <label>ward_A-0</label>
+            <itemset nodeset="instance('wards')/root/item[city= /data/city_A-0 ]">
+                <value ref="name" />
+                <label ref="label" />
+            </itemset>
+        </select1>
+        <group ref="/data/group_B-0">
+            <label>group_B-0</label>
+            <select1 ref="/data/group_B-0/state_B-0">
+                <label>state_B-0</label>
+                <item>
+                    <label>Texas</label>
+                    <value>tx</value>
+                </item>
+                <item>
+                    <label>Washington</label>
+                    <value>wa</value>
+                </item>
+            </select1>
+            <select1 ref="/data/group_B-0/county_B-0">
+                <label>county_B-0</label>
+                <itemset
+                    nodeset="instance('counties')/root/item[state= /data/group_B-0/state_B-0 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <select1 ref="/data/group_B-0/city_B-0">
+                <label>city_B-0</label>
+                <itemset
+                    nodeset="instance('cities')/root/item[state= /data/group_B-0/state_B-0  and county= /data/group_B-0/county_B-0 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <select1 ref="/data/group_B-0/show_ward_B-0">
+                <label>show-ward_B-0</label>
+                <item>
+                    <label>no</label>
+                    <value>no</value>
+                </item>
+                <item>
+                    <label>yes</label>
+                    <value>yes</value>
+                </item>
+            </select1>
+            <select1 ref="/data/group_B-0/ward_B-0">
+                <label>ward_B-0</label>
+                <itemset nodeset="instance('wards')/root/item[city= /data/group_B-0/city_B-0 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <group ref="/data/group_B-0/group_C-0">
+                <label>group_C-0</label>
+                <select1 ref="/data/group_B-0/group_C-0/state_C-0">
+                    <label>state_C-0</label>
+                    <item>
+                        <label>Texas</label>
+                        <value>tx</value>
+                    </item>
+                    <item>
+                        <label>Washington</label>
+                        <value>wa</value>
+                    </item>
+                </select1>
+                <select1 ref="/data/group_B-0/group_C-0/county_C-0">
+                    <label>county_C-0</label>
+                    <itemset
+                        nodeset="instance('counties')/root/item[state= /data/group_B-0/group_C-0/state_C-0 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+                <select1 ref="/data/group_B-0/group_C-0/city_C-0">
+                    <label>city_C-0</label>
+                    <itemset
+                        nodeset="instance('cities')/root/item[state= /data/group_B-0/group_C-0/state_C-0  and county= /data/group_B-0/group_C-0/county_C-0 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+                <select1 ref="/data/group_B-0/group_C-0/show_ward_C-0">
+                    <label>show-ward_C-0</label>
+                    <item>
+                        <label>no</label>
+                        <value>no</value>
+                    </item>
+                    <item>
+                        <label>yes</label>
+                        <value>yes</value>
+                    </item>
+                </select1>
+                <select1 ref="/data/group_B-0/group_C-0/ward_C-0">
+                    <label>ward_C-0</label>
+                    <itemset
+                        nodeset="instance('wards')/root/item[city= /data/group_B-0/group_C-0/city_C-0 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+            </group>
+        </group>
+        <group appearance="field-list" ref="/data/group_D-0">
+            <label>group_D-0</label>
+            <select1 ref="/data/group_D-0/state_D-0">
+                <label>state_D-0</label>
+                <item>
+                    <label>Texas</label>
+                    <value>tx</value>
+                </item>
+                <item>
+                    <label>Washington</label>
+                    <value>wa</value>
+                </item>
+            </select1>
+            <select1 ref="/data/group_D-0/county_D-0">
+                <label>county_D-0</label>
+                <itemset
+                    nodeset="instance('counties')/root/item[state= /data/group_D-0/state_D-0 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <select1 ref="/data/group_D-0/city_D-0">
+                <label>city_D-0</label>
+                <itemset
+                    nodeset="instance('cities')/root/item[state= /data/group_D-0/state_D-0  and county= /data/group_D-0/county_D-0 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <select1 ref="/data/group_D-0/show_ward_D-0">
+                <label>show-ward_D-0</label>
+                <item>
+                    <label>no</label>
+                    <value>no</value>
+                </item>
+                <item>
+                    <label>yes</label>
+                    <value>yes</value>
+                </item>
+            </select1>
+            <select1 ref="/data/group_D-0/ward_D-0">
+                <label>ward_D-0</label>
+                <itemset nodeset="instance('wards')/root/item[city= /data/group_D-0/city_D-0 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <group appearance="field-list" ref="/data/group_D-0/group_E-0">
+                <label>group_E-0</label>
+                <select1 ref="/data/group_D-0/group_E-0/state_E-0">
+                    <label>state_E-0</label>
+                    <item>
+                        <label>Texas</label>
+                        <value>tx</value>
+                    </item>
+                    <item>
+                        <label>Washington</label>
+                        <value>wa</value>
+                    </item>
+                </select1>
+                <select1 ref="/data/group_D-0/group_E-0/county_E-0">
+                    <label>county_E-0</label>
+                    <itemset
+                        nodeset="instance('counties')/root/item[state= /data/group_D-0/group_E-0/state_E-0 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+                <select1 ref="/data/group_D-0/group_E-0/city_E-0">
+                    <label>city_E-0</label>
+                    <itemset
+                        nodeset="instance('cities')/root/item[state= /data/group_D-0/group_E-0/state_E-0  and county= /data/group_D-0/group_E-0/county_E-0 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+                <select1 ref="/data/group_D-0/group_E-0/show_ward_E-0">
+                    <label>show-ward_E-0</label>
+                    <item>
+                        <label>no</label>
+                        <value>no</value>
+                    </item>
+                    <item>
+                        <label>yes</label>
+                        <value>yes</value>
+                    </item>
+                </select1>
+                <select1 ref="/data/group_D-0/group_E-0/ward_E-0">
+                    <label>ward_E-0</label>
+                    <itemset
+                        nodeset="instance('wards')/root/item[city= /data/group_D-0/group_E-0/city_E-0 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+            </group>
+        </group>
+        <input ref="/data/section-1">
+            <label>section-1</label>
+        </input>
+        <select1 appearance="minimal" ref="/data/state_A-1">
+            <label>state_A-1</label>
+            <item>
+                <label>Texas</label>
+                <value>tx</value>
+            </item>
+            <item>
+                <label>Washington</label>
+                <value>wa</value>
+            </item>
+        </select1>
+        <select1 appearance="minimal" ref="/data/county_A-1">
+            <label>county_A-1</label>
+            <itemset nodeset="instance('counties')/root/item[state= /data/state_A-1 ]">
+                <value ref="name" />
+                <label ref="label" />
+            </itemset>
+        </select1>
+        <select1 appearance="minimal" ref="/data/city_A-1">
+            <label>city_A-1</label>
+            <itemset
+                nodeset="instance('cities')/root/item[state= /data/state_A-1  and county= /data/county_A-1 ]">
+                <value ref="name" />
+                <label ref="label" />
+            </itemset>
+        </select1>
+        <select1 ref="/data/show_ward_A-1">
+            <label>show-ward_A-1</label>
+            <item>
+                <label>no</label>
+                <value>no</value>
+            </item>
+            <item>
+                <label>yes</label>
+                <value>yes</value>
+            </item>
+        </select1>
+        <select1 appearance="minimal" ref="/data/ward_A-1">
+            <label>ward_A-1</label>
+            <itemset nodeset="instance('wards')/root/item[city= /data/city_A-1 ]">
+                <value ref="name" />
+                <label ref="label" />
+            </itemset>
+        </select1>
+        <group ref="/data/group_B-1">
+            <label>group_B-1</label>
+            <select1 appearance="minimal" ref="/data/group_B-1/state_B-1">
+                <label>state_B-1</label>
+                <item>
+                    <label>Texas</label>
+                    <value>tx</value>
+                </item>
+                <item>
+                    <label>Washington</label>
+                    <value>wa</value>
+                </item>
+            </select1>
+            <select1 appearance="minimal" ref="/data/group_B-1/county_B-1">
+                <label>county_B-1</label>
+                <itemset
+                    nodeset="instance('counties')/root/item[state= /data/group_B-1/state_B-1 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <select1 appearance="minimal" ref="/data/group_B-1/city_B-1">
+                <label>city_B-1</label>
+                <itemset
+                    nodeset="instance('cities')/root/item[state= /data/group_B-1/state_B-1  and county= /data/group_B-1/county_B-1 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <select1 ref="/data/group_B-1/show_ward_B-1">
+                <label>show-ward_B-1</label>
+                <item>
+                    <label>no</label>
+                    <value>no</value>
+                </item>
+                <item>
+                    <label>yes</label>
+                    <value>yes</value>
+                </item>
+            </select1>
+            <select1 appearance="minimal" ref="/data/group_B-1/ward_B-1">
+                <label>ward_B-1</label>
+                <itemset nodeset="instance('wards')/root/item[city= /data/group_B-1/city_B-1 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <group ref="/data/group_B-1/group_C-1">
+                <label>group_C-1</label>
+                <select1 appearance="minimal" ref="/data/group_B-1/group_C-1/state_C-1">
+                    <label>state_C-1</label>
+                    <item>
+                        <label>Texas</label>
+                        <value>tx</value>
+                    </item>
+                    <item>
+                        <label>Washington</label>
+                        <value>wa</value>
+                    </item>
+                </select1>
+                <select1 appearance="minimal" ref="/data/group_B-1/group_C-1/county_C-1">
+                    <label>county_C-1</label>
+                    <itemset
+                        nodeset="instance('counties')/root/item[state= /data/group_B-1/group_C-1/state_C-1 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+                <select1 appearance="minimal" ref="/data/group_B-1/group_C-1/city_C-1">
+                    <label>city_C-1</label>
+                    <itemset
+                        nodeset="instance('cities')/root/item[state= /data/group_B-1/group_C-1/state_C-1  and county= /data/group_B-1/group_C-1/county_C-1 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+                <select1 ref="/data/group_B-1/group_C-1/show_ward_C-1">
+                    <label>show-ward_C-1</label>
+                    <item>
+                        <label>no</label>
+                        <value>no</value>
+                    </item>
+                    <item>
+                        <label>yes</label>
+                        <value>yes</value>
+                    </item>
+                </select1>
+                <select1 appearance="minimal" ref="/data/group_B-1/group_C-1/ward_C-1">
+                    <label>ward_C-1</label>
+                    <itemset
+                        nodeset="instance('wards')/root/item[city= /data/group_B-1/group_C-1/city_C-1 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+            </group>
+        </group>
+        <group appearance="field-list" ref="/data/group_D-1">
+            <label>group_D-1</label>
+            <select1 appearance="minimal" ref="/data/group_D-1/state_D-1">
+                <label>state_D-1</label>
+                <item>
+                    <label>Texas</label>
+                    <value>tx</value>
+                </item>
+                <item>
+                    <label>Washington</label>
+                    <value>wa</value>
+                </item>
+            </select1>
+            <select1 appearance="minimal" ref="/data/group_D-1/county_D-1">
+                <label>county_D-1</label>
+                <itemset
+                    nodeset="instance('counties')/root/item[state= /data/group_D-1/state_D-1 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <select1 appearance="minimal" ref="/data/group_D-1/city_D-1">
+                <label>city_D-1</label>
+                <itemset
+                    nodeset="instance('cities')/root/item[state= /data/group_D-1/state_D-1  and county= /data/group_D-1/county_D-1 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <select1 ref="/data/group_D-1/show_ward_D-1">
+                <label>show-ward_D-1</label>
+                <item>
+                    <label>no</label>
+                    <value>no</value>
+                </item>
+                <item>
+                    <label>yes</label>
+                    <value>yes</value>
+                </item>
+            </select1>
+            <select1 appearance="minimal" ref="/data/group_D-1/ward_D-1">
+                <label>ward_D-1</label>
+                <itemset nodeset="instance('wards')/root/item[city= /data/group_D-1/city_D-1 ]">
+                    <value ref="name" />
+                    <label ref="label" />
+                </itemset>
+            </select1>
+            <group appearance="field-list" ref="/data/group_D-1/group_E-1">
+                <label>group_E-1</label>
+                <select1 appearance="minimal" ref="/data/group_D-1/group_E-1/state_E-1">
+                    <label>state_E-1</label>
+                    <item>
+                        <label>Texas</label>
+                        <value>tx</value>
+                    </item>
+                    <item>
+                        <label>Washington</label>
+                        <value>wa</value>
+                    </item>
+                </select1>
+                <select1 appearance="minimal" ref="/data/group_D-1/group_E-1/county_E-1">
+                    <label>county_E-1</label>
+                    <itemset
+                        nodeset="instance('counties')/root/item[state= /data/group_D-1/group_E-1/state_E-1 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+                <select1 appearance="minimal" ref="/data/group_D-1/group_E-1/city_E-1">
+                    <label>city_E-1</label>
+                    <itemset
+                        nodeset="instance('cities')/root/item[state= /data/group_D-1/group_E-1/state_E-1  and county= /data/group_D-1/group_E-1/county_E-1 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+                <select1 ref="/data/group_D-1/group_E-1/show_ward_E-1">
+                    <label>show-ward_E-1</label>
+                    <item>
+                        <label>no</label>
+                        <value>no</value>
+                    </item>
+                    <item>
+                        <label>yes</label>
+                        <value>yes</value>
+                    </item>
+                </select1>
+                <select1 appearance="minimal" ref="/data/group_D-1/group_E-1/ward_E-1">
+                    <label>ward_E-1</label>
+                    <itemset
+                        nodeset="instance('wards')/root/item[city= /data/group_D-1/group_E-1/city_E-1 ]">
+                        <value ref="name" />
+                        <label ref="label" />
+                    </itemset>
+                </select1>
+            </group>
+        </group>
+        <input ref="/data/section-2">
+            <label>section-2</label>
+        </input>
+        <select1 ref="/data/state_A-2">
+            <label>state_A-2</label>
+            <item>
+                <label>Texas</label>
+                <value>tx</value>
+            </item>
+            <item>
+                <label>Washington</label>
+                <value>wa</value>
+            </item>
+        </select1>
+        <input query="instance('counties')/root/item[state= /data/state_A-2 ]"
+            ref="/data/county_A-2">
+            <label>county_A-2</label>
+        </input>
+        <input
+            query="instance('cities')/root/item[state= /data/state_A-2  and county= /data/county_A-2 ]"
+            ref="/data/city_A-2">
+            <label>city_A-2</label>
+        </input>
+        <select1 ref="/data/show_ward_A-2">
+            <label>show-ward_A-2</label>
+            <item>
+                <label>no</label>
+                <value>no</value>
+            </item>
+            <item>
+                <label>yes</label>
+                <value>yes</value>
+            </item>
+        </select1>
+        <input query="instance('wards')/root/item[city= /data/city_A-2 ]" ref="/data/ward_A-2">
+            <label>ward_A-2</label>
+        </input>
+        <group ref="/data/group_B-2">
+            <label>group_B-2</label>
+            <select1 ref="/data/group_B-2/state_B-2">
+                <label>state_B-2</label>
+                <item>
+                    <label>Texas</label>
+                    <value>tx</value>
+                </item>
+                <item>
+                    <label>Washington</label>
+                    <value>wa</value>
+                </item>
+            </select1>
+            <input query="instance('counties')/root/item[state= /data/group_B-2/state_B-2 ]"
+                ref="/data/group_B-2/county_B-2">
+                <label>county_B-2</label>
+            </input>
+            <input
+                query="instance('cities')/root/item[state= /data/group_B-2/state_B-2  and county= /data/group_B-2/county_B-2 ]"
+                ref="/data/group_B-2/city_B-2">
+                <label>city_B-2</label>
+            </input>
+            <select1 ref="/data/group_B-2/show_ward_B-2">
+                <label>show-ward_B-2</label>
+                <item>
+                    <label>no</label>
+                    <value>no</value>
+                </item>
+                <item>
+                    <label>yes</label>
+                    <value>yes</value>
+                </item>
+            </select1>
+            <input query="instance('wards')/root/item[city= /data/group_B-2/city_B-2 ]"
+                ref="/data/group_B-2/ward_B-2">
+                <label>ward_B-2</label>
+            </input>
+            <group ref="/data/group_B-2/group_C-2">
+                <label>group_C-2</label>
+                <select1 ref="/data/group_B-2/group_C-2/state_C-2">
+                    <label>state_C-2</label>
+                    <item>
+                        <label>Texas</label>
+                        <value>tx</value>
+                    </item>
+                    <item>
+                        <label>Washington</label>
+                        <value>wa</value>
+                    </item>
+                </select1>
+                <input
+                    query="instance('counties')/root/item[state= /data/group_B-2/group_C-2/state_C-2 ]"
+                    ref="/data/group_B-2/group_C-2/county_C-2">
+                    <label>county_C-2</label>
+                </input>
+                <input
+                    query="instance('cities')/root/item[state= /data/group_B-2/group_C-2/state_C-2  and county= /data/group_B-2/group_C-2/county_C-2 ]"
+                    ref="/data/group_B-2/group_C-2/city_C-2">
+                    <label>city_C-2</label>
+                </input>
+                <select1 ref="/data/group_B-2/group_C-2/show_ward_C-2">
+                    <label>show-ward_C-2</label>
+                    <item>
+                        <label>no</label>
+                        <value>no</value>
+                    </item>
+                    <item>
+                        <label>yes</label>
+                        <value>yes</value>
+                    </item>
+                </select1>
+                <input
+                    query="instance('wards')/root/item[city= /data/group_B-2/group_C-2/city_C-2 ]"
+                    ref="/data/group_B-2/group_C-2/ward_C-2">
+                    <label>ward_C-2</label>
+                </input>
+            </group>
+        </group>
+        <group appearance="field-list" ref="/data/group_D-2">
+            <label>group_D-2</label>
+            <select1 ref="/data/group_D-2/state_D-2">
+                <label>state_D-2</label>
+                <item>
+                    <label>Texas</label>
+                    <value>tx</value>
+                </item>
+                <item>
+                    <label>Washington</label>
+                    <value>wa</value>
+                </item>
+            </select1>
+            <input query="instance('counties')/root/item[state= /data/group_D-2/state_D-2 ]"
+                ref="/data/group_D-2/county_D-2">
+                <label>county_D-2</label>
+            </input>
+            <input
+                query="instance('cities')/root/item[state= /data/group_D-2/state_D-2  and county= /data/group_D-2/county_D-2 ]"
+                ref="/data/group_D-2/city_D-2">
+                <label>city_D-2</label>
+            </input>
+            <select1 ref="/data/group_D-2/show_ward_D-2">
+                <label>show-ward_D-2</label>
+                <item>
+                    <label>no</label>
+                    <value>no</value>
+                </item>
+                <item>
+                    <label>yes</label>
+                    <value>yes</value>
+                </item>
+            </select1>
+            <input query="instance('wards')/root/item[city= /data/group_D-2/city_D-2 ]"
+                ref="/data/group_D-2/ward_D-2">
+                <label>ward_D-2</label>
+            </input>
+            <group appearance="field-list" ref="/data/group_D-2/group_E-2">
+                <label>group_E-2</label>
+                <select1 ref="/data/group_D-2/group_E-2/state_E-2">
+                    <label>state_E-2</label>
+                    <item>
+                        <label>Texas</label>
+                        <value>tx</value>
+                    </item>
+                    <item>
+                        <label>Washington</label>
+                        <value>wa</value>
+                    </item>
+                </select1>
+                <input
+                    query="instance('counties')/root/item[state= /data/group_D-2/group_E-2/state_E-2 ]"
+                    ref="/data/group_D-2/group_E-2/county_E-2">
+                    <label>county_E-2</label>
+                </input>
+                <input
+                    query="instance('cities')/root/item[state= /data/group_D-2/group_E-2/state_E-2  and county= /data/group_D-2/group_E-2/county_E-2 ]"
+                    ref="/data/group_D-2/group_E-2/city_E-2">
+                    <label>city_E-2</label>
+                </input>
+                <select1 ref="/data/group_D-2/group_E-2/show_ward_E-2">
+                    <label>show-ward_E-2</label>
+                    <item>
+                        <label>no</label>
+                        <value>no</value>
+                    </item>
+                    <item>
+                        <label>yes</label>
+                        <value>yes</value>
+                    </item>
+                </select1>
+                <input
+                    query="instance('wards')/root/item[city= /data/group_D-2/group_E-2/city_E-2 ]"
+                    ref="/data/group_D-2/group_E-2/ward_E-2">
+                    <label>ward_E-2</label>
+                </input>
+            </group>
+        </group>
+        <input ref="/data/section-3">
+            <label>section-3</label>
+        </input>
+        <select1 appearance="minimal" ref="/data/state_A-3">
+            <label>state_A-3</label>
+            <item>
+                <label>Texas</label>
+                <value>tx</value>
+            </item>
+            <item>
+                <label>Washington</label>
+                <value>wa</value>
+            </item>
+        </select1>
+        <input appearance="minimal" query="instance('counties')/root/item[state= /data/state_A-3 ]"
+            ref="/data/county_A-3">
+            <label>county_A-3</label>
+        </input>
+        <input appearance="minimal"
+            query="instance('cities')/root/item[state= /data/state_A-3  and county= /data/county_A-3 ]"
+            ref="/data/city_A-3">
+            <label>city_A-3</label>
+        </input>
+        <select1 ref="/data/show_ward_A-3">
+            <label>show-ward_A-3</label>
+            <item>
+                <label>no</label>
+                <value>no</value>
+            </item>
+            <item>
+                <label>yes</label>
+                <value>yes</value>
+            </item>
+        </select1>
+        <input appearance="minimal" query="instance('wards')/root/item[city= /data/city_A-3 ]"
+            ref="/data/ward_A-3">
+            <label>ward_A-3</label>
+        </input>
+        <group ref="/data/group_B-3">
+            <label>group_B-3</label>
+            <select1 appearance="minimal" ref="/data/group_B-3/state_B-3">
+                <label>state_B-3</label>
+                <item>
+                    <label>Texas</label>
+                    <value>tx</value>
+                </item>
+                <item>
+                    <label>Washington</label>
+                    <value>wa</value>
+                </item>
+            </select1>
+            <input appearance="minimal"
+                query="instance('counties')/root/item[state= /data/group_B-3/state_B-3 ]"
+                ref="/data/group_B-3/county_B-3">
+                <label>county_B-3</label>
+            </input>
+            <input appearance="minimal"
+                query="instance('cities')/root/item[state= /data/group_B-3/state_B-3  and county= /data/group_B-3/county_B-3 ]"
+                ref="/data/group_B-3/city_B-3">
+                <label>city_B-3</label>
+            </input>
+            <select1 ref="/data/group_B-3/show_ward_B-3">
+                <label>show-ward_B-3</label>
+                <item>
+                    <label>no</label>
+                    <value>no</value>
+                </item>
+                <item>
+                    <label>yes</label>
+                    <value>yes</value>
+                </item>
+            </select1>
+            <input appearance="minimal"
+                query="instance('wards')/root/item[city= /data/group_B-3/city_B-3 ]"
+                ref="/data/group_B-3/ward_B-3">
+                <label>ward_B-3</label>
+            </input>
+            <group ref="/data/group_B-3/group_C-3">
+                <label>group_C-3</label>
+                <select1 appearance="minimal" ref="/data/group_B-3/group_C-3/state_C-3">
+                    <label>state_C-3</label>
+                    <item>
+                        <label>Texas</label>
+                        <value>tx</value>
+                    </item>
+                    <item>
+                        <label>Washington</label>
+                        <value>wa</value>
+                    </item>
+                </select1>
+                <input appearance="minimal"
+                    query="instance('counties')/root/item[state= /data/group_B-3/group_C-3/state_C-3 ]"
+                    ref="/data/group_B-3/group_C-3/county_C-3">
+                    <label>county_C-3</label>
+                </input>
+                <input appearance="minimal"
+                    query="instance('cities')/root/item[state= /data/group_B-3/group_C-3/state_C-3  and county= /data/group_B-3/group_C-3/county_C-3 ]"
+                    ref="/data/group_B-3/group_C-3/city_C-3">
+                    <label>city_C-3</label>
+                </input>
+                <select1 ref="/data/group_B-3/group_C-3/show_ward_C-3">
+                    <label>show-ward_C-3</label>
+                    <item>
+                        <label>no</label>
+                        <value>no</value>
+                    </item>
+                    <item>
+                        <label>yes</label>
+                        <value>yes</value>
+                    </item>
+                </select1>
+                <input appearance="minimal"
+                    query="instance('wards')/root/item[city= /data/group_B-3/group_C-3/city_C-3 ]"
+                    ref="/data/group_B-3/group_C-3/ward_C-3">
+                    <label>ward_C-3</label>
+                </input>
+            </group>
+        </group>
+        <group appearance="field-list" ref="/data/group_D-3">
+            <label>group_D-3</label>
+            <select1 appearance="minimal" ref="/data/group_D-3/state_D-3">
+                <label>state_D-3</label>
+                <item>
+                    <label>Texas</label>
+                    <value>tx</value>
+                </item>
+                <item>
+                    <label>Washington</label>
+                    <value>wa</value>
+                </item>
+            </select1>
+            <input appearance="minimal"
+                query="instance('counties')/root/item[state= /data/group_D-3/state_D-3 ]"
+                ref="/data/group_D-3/county_D-3">
+                <label>county_D-3</label>
+            </input>
+            <input appearance="minimal"
+                query="instance('cities')/root/item[state= /data/group_D-3/state_D-3  and county= /data/group_D-3/county_D-3 ]"
+                ref="/data/group_D-3/city_D-3">
+                <label>city_D-3</label>
+            </input>
+            <select1 ref="/data/group_D-3/show_ward_D-3">
+                <label>show-ward_D-3</label>
+                <item>
+                    <label>no</label>
+                    <value>no</value>
+                </item>
+                <item>
+                    <label>yes</label>
+                    <value>yes</value>
+                </item>
+            </select1>
+            <input appearance="minimal"
+                query="instance('wards')/root/item[city= /data/group_D-3/city_D-3 ]"
+                ref="/data/group_D-3/ward_D-3">
+                <label>ward_D-3</label>
+            </input>
+            <group appearance="field-list" ref="/data/group_D-3/group_E-3">
+                <label>group_E-3</label>
+                <select1 appearance="minimal" ref="/data/group_D-3/group_E-3/state_E-3">
+                    <label>state_E-3</label>
+                    <item>
+                        <label>Texas</label>
+                        <value>tx</value>
+                    </item>
+                    <item>
+                        <label>Washington</label>
+                        <value>wa</value>
+                    </item>
+                </select1>
+                <input appearance="minimal"
+                    query="instance('counties')/root/item[state= /data/group_D-3/group_E-3/state_E-3 ]"
+                    ref="/data/group_D-3/group_E-3/county_E-3">
+                    <label>county_E-3</label>
+                </input>
+                <input appearance="minimal"
+                    query="instance('cities')/root/item[state= /data/group_D-3/group_E-3/state_E-3  and county= /data/group_D-3/group_E-3/county_E-3 ]"
+                    ref="/data/group_D-3/group_E-3/city_E-3">
+                    <label>city_E-3</label>
+                </input>
+                <select1 ref="/data/group_D-3/group_E-3/show_ward_E-3">
+                    <label>show-ward_E-3</label>
+                    <item>
+                        <label>no</label>
+                        <value>no</value>
+                    </item>
+                    <item>
+                        <label>yes</label>
+                        <value>yes</value>
+                    </item>
+                </select1>
+                <input appearance="minimal"
+                    query="instance('wards')/root/item[city= /data/group_D-3/group_E-3/city_E-3 ]"
+                    ref="/data/group_D-3/group_E-3/ward_E-3">
+                    <label>ward_E-3</label>
+                </input>
+            </group>
+        </group>
+    </h:body>
+</h:html>

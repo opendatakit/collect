@@ -12,10 +12,10 @@ import org.odk.collect.android.formentry.questions.QuestionDetails;
 import org.odk.collect.android.fragments.dialogs.SelectMinimalDialog;
 import org.odk.collect.android.fragments.dialogs.SelectOneMinimalDialog;
 import org.odk.collect.android.listeners.AdvanceToNextListener;
+import org.odk.collect.android.utilities.Appearances;
 import org.odk.collect.android.utilities.DialogUtils;
 import org.odk.collect.android.utilities.SelectOneWidgetUtils;
 import org.odk.collect.android.utilities.StringUtils;
-import org.odk.collect.android.utilities.Appearances;
 import org.odk.collect.android.widgets.utilities.WaitingForDataRegistry;
 
 import java.util.List;
@@ -63,6 +63,7 @@ public class SelectOneMinimalWidget extends SelectMinimalWidget {
     public void clearAnswer() {
         selectedItem = null;
         super.clearAnswer();
+        clearFollowingItemsetWidgets();
     }
 
     @Override
@@ -90,6 +91,7 @@ public class SelectOneMinimalWidget extends SelectMinimalWidget {
         } else {
             binding.answer.setText(StringUtils.textToHtml(getFormEntryPrompt().getSelectItemText(selectedItem)));
         }
+        clearFollowingItemsetWidgets();
     }
 
     private String getSavedSelectedValue() {

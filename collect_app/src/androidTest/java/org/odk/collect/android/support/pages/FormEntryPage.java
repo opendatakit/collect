@@ -16,6 +16,7 @@ import static androidx.test.espresso.action.ViewActions.swipeLeft;
 import static androidx.test.espresso.action.ViewActions.swipeRight;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.isNotChecked;
 import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withParent;
@@ -25,6 +26,7 @@ import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.core.StringEndsWith.endsWith;
 import static org.odk.collect.android.support.CustomMatchers.withIndex;
+import static org.odk.collect.android.support.actions.NestedScrollToAction.nestedScrollTo;
 
 public class FormEntryPage extends Page<FormEntryPage> {
 
@@ -323,4 +325,28 @@ public class FormEntryPage extends Page<FormEntryPage> {
         clickOnString(R.string.record_audio);
         return new CancelRecordingDialog(formName);
     }
+
+    //The following added for SelectOneResetTest 21-06-28
+    public FormEntryPage assertTextIsNotChecked(String text, int index) {
+        onView(withIndex(withText(text), index))
+                .check(matches(isNotChecked()));
+        return this;
+    }
+
+    public FormEntryPage clickOnText(String text, int index) {
+        onView(withIndex(withText(text), index)).perform(click());
+        return this;
+    }
+
+    public FormEntryPage scrollToText(String text, int index) {
+        onView(withIndex(withText(text), index)).perform(nestedScrollTo());
+        return this;
+    }
+
+    public FormEntryPage scrollToAndClickText(String text, int index) {
+        onView(withIndex(withText(text), index)).perform(nestedScrollTo());
+        onView(withIndex(withText(text), index)).perform(click());
+        return this;
+    }
+
 }
