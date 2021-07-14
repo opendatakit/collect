@@ -85,6 +85,5 @@ class ProjectPreferencesActivity :
 
     companion object {
         const val TAG = "GeneralPreferencesFragment"
-        const val INTENT_KEY_ADMIN_MODE = "adminMode"
     }
 }

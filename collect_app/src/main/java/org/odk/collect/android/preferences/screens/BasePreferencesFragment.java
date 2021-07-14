@@ -4,27 +4,23 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 
+import org.jetbrains.annotations.NotNull;
 import org.odk.collect.android.R;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
 import androidx.preference.DialogPreference;
 import androidx.preference.Preference;
-import androidx.fragment.app.FragmentActivity;
 import androidx.preference.PreferenceFragmentCompat;
 
-import org.jetbrains.annotations.NotNull;
 import org.odk.collect.android.activities.CollectAbstractActivity;
 import org.odk.collect.android.configure.SettingsChangeHandler;
 import org.odk.collect.android.injection.DaggerUtils;
-import org.odk.collect.android.preferences.keys.AdminKeys;
-import org.odk.collect.android.preferences.DisabledPreferencesRemover;
 import org.odk.collect.android.projects.CurrentProjectProvider;
 import org.odk.collect.shared.Settings;
 import org.odk.collect.android.preferences.source.SettingsProvider;
 
 import javax.inject.Inject;
-
-import static org.odk.collect.android.preferences.screens.ProjectPreferencesActivity.INTENT_KEY_ADMIN_MODE;
 
 public abstract class BasePreferencesFragment extends PreferenceFragmentCompat implements Settings.OnSettingChangeListener {
 
@@ -61,20 +57,7 @@ public abstract class BasePreferencesFragment extends PreferenceFragmentCompat i
         if (activity instanceof CollectAbstractActivity) {
             ((CollectAbstractActivity) activity).initToolbar(getPreferenceScreen().getTitle());
         }
-        removeDisabledPrefs();
 
         super.onViewCreated(view, savedInstanceState);
-    }
-
-    private void removeDisabledPrefs() {
-        if (!isInAdminMode()) {
-            DisabledPreferencesRemover preferencesRemover = new DisabledPreferencesRemover(this, settingsProvider.getAdminSettings());
-            preferencesRemover.remove(AdminKeys.adminToGeneral);
-            preferencesRemover.removeEmptyCategories();
-        }
-    }
-
-    protected boolean isInAdminMode() {
-        return getArguments() != null && getArguments().getBoolean(INTENT_KEY_ADMIN_MODE, false);
     }
 }

@@ -14,43 +14,43 @@ limitations under the License.
     android:title="@string/project_settings">
 
     <Preference
-        android:icon="@drawable/ic_outline_cloud_24"
+        android:icon="@drawable/ic_outline_cloud_accent_24"
         android:key="protocol"
         android:title="@string/server_settings_title"
         android:summary="@string/server_settings_subtext" />
 
     <Preference
-        android:icon="@drawable/ic_outline_color_lens_24"
+        android:icon="@drawable/ic_outline_color_lens_accent_24"
         android:key="project_display"
         android:title="@string/project_display_title"
         android:summary="@string/project_display_subtext" />
 
     <Preference
-        android:icon="@drawable/ic_outline_phonelink_setup_24"
+        android:icon="@drawable/ic_outline_phonelink_setup_accent_24"
         android:key="user_interface"
         android:title="@string/client"
         android:summary="@string/user_interface_settings_subtext" />
 
     <Preference
-        android:icon="@drawable/ic_outline_map_24"
+        android:icon="@drawable/ic_outline_map_accent_24"
         android:key="maps"
         android:title="@string/maps"
         android:summary="@string/maps_settings_subtext" />
 
     <Preference
-        android:icon="@drawable/ic_outline_assignment_24"
+        android:icon="@drawable/ic_outline_assignment_accent_24"
         android:key="form_management"
         android:title="@string/form_management_preferences"
         android:summary="@string/form_management_settings_subtext" />
 
     <Preference
-        android:icon="@drawable/ic_outline_face_24"
+        android:icon="@drawable/ic_outline_face_accent_24"
         android:key="user_and_device_identity"
         android:title="@string/user_and_device_identity_title"
         android:summary="@string/user_and_device_identity_settings_subtext" />
 
     <Preference
-        android:icon="@drawable/ic_outline_warning_24"
+        android:icon="@drawable/ic_outline_warning_accent_24"
         android:key="experimental"
         android:title="@string/experimental" />
 
@@ -59,18 +59,18 @@ limitations under the License.
         app:iconSpaceReserved="false">
 
         <Preference
-            android:icon="@drawable/ic_outline_vpn_key_24"
+            android:icon="@drawable/ic_outline_vpn_key_accent_24"
             android:key="admin_password"
             android:title="@string/set_admin_password" />
 
         <Preference
-            android:icon="@drawable/ic_outline_settings_applications_24"
+            android:icon="@drawable/ic_outline_settings_applications_accent_24"
             android:key="project_management"
             android:title="@string/project_management_section_title"
             android:summary="@string/project_management_section_subtext"/>
 
         <Preference
-            android:icon="@drawable/ic_outline_lock_24"
+            android:icon="@drawable/ic_outline_lock_accent_24"
             android:key="access_control"
             android:title="@string/access_control_section_title"
             android:summary="@string/access_control_section_subtext"/>

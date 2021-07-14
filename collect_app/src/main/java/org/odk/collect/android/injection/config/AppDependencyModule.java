@@ -82,6 +82,7 @@ import org.odk.collect.android.openrosa.okhttp.OkHttpConnection;
 import org.odk.collect.android.openrosa.okhttp.OkHttpOpenRosaServerClientProvider;
 import org.odk.collect.android.permissions.PermissionsChecker;
 import org.odk.collect.android.permissions.PermissionsProvider;
+import org.odk.collect.android.preferences.ProjectPreferencesViewModel;
 import org.odk.collect.android.preferences.keys.AdminKeys;
 import org.odk.collect.android.preferences.keys.GeneralKeys;
 import org.odk.collect.android.preferences.keys.MetaKeys;
@@ -521,6 +522,11 @@ public class AppDependencyModule {
     @Provides
     public SplashScreenViewModel.Factory providesSplashScreenViewModel(SettingsProvider settingsProvider, ProjectsRepository projectsRepository) {
         return new SplashScreenViewModel.Factory(settingsProvider.getGeneralSettings(), projectsRepository);
+    }
+
+    @Provides
+    public ProjectPreferencesViewModel.Factory providesProjectPreferencesViewModel(AdminPasswordProvider adminPasswordProvider) {
+        return new ProjectPreferencesViewModel.Factory(adminPasswordProvider);
     }
 
     @Provides

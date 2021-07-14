@@ -25,7 +25,6 @@ import org.odk.collect.android.injection.config.AppDependencyModule
 import org.odk.collect.android.preferences.screens.ProjectPreferencesActivity
 import org.odk.collect.android.preferences.source.SettingsProvider
 import org.odk.collect.android.support.CollectHelpers
-import org.odk.collect.android.utilities.AdminPasswordProvider
 import org.odk.collect.androidshared.livedata.MutableNonNullLiveData
 import org.odk.collect.fragmentstest.DialogFragmentTest
 import org.odk.collect.projects.InMemProjectsRepository
@@ -50,8 +49,6 @@ class ProjectSettingsDialogTest {
 
     val projectsRepository = InMemProjectsRepository(UUIDGenerator())
 
-    val adminPasswordProvider: AdminPasswordProvider = mock {}
-
     @Before
     fun setup() {
         CollectHelpers.overrideAppDependencyModule(object : AppDependencyModule() {
@@ -69,10 +66,6 @@ class ProjectSettingsDialogTest {
                 settingsProvider: SettingsProvider?
             ): ProjectsRepository {
                 return projectsRepository
-            }
-
-            override fun providesAdminPasswordProvider(settingsProvider: SettingsProvider?): AdminPasswordProvider {
-                return adminPasswordProvider
             }
         })
     }

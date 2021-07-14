@@ -9,7 +9,7 @@
     the specific language governing permissions and limitations under the
     License.
 -->
-<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation,UnusedResources" tools:locale="en">
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation" tools:locale="en">
     <!-- Text for an action button on the main screen. -->
     <string name="enter_data">Fill Blank Form</string>
     <!-- Text for an action button on the main screen. -->
@@ -839,6 +839,11 @@
     <string name="device_id">Device ID</string>
     <!-- Displayed when a device property such as the phone number is not available -->
     <string name="preference_not_available">Not available</string>
+
+    <!-- Label for an item displayed in the project settings menu to unlock settings -->
+    <string name="unlock_settings">Unlock settings</string>
+    <!-- Label for an item displayed in the project settings menu to indicate that settings are unlocked -->
+    <string name="settings_unlocked">Settings unlocked</string>
 
     <!--
      ##############################################

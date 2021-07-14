@@ -122,10 +122,6 @@ public class ConfigureWithQRCodeTest {
                 .openProjectSettings()
                 .clickGeneralSettings()
                 .setAdminPassword("blah")
-                .pressBack(new MainMenuPage())
-
-                .openProjectSettings()
-                .clickGeneralSettings()
                 .clickProjectManagement()
                 .clickConfigureQR()
                 .clickView()
