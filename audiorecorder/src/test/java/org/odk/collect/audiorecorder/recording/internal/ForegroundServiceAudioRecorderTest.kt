@@ -6,6 +6,7 @@ import androidx.test.core.app.ApplicationProvider.getApplicationContext
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.equalTo
+import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -17,14 +18,12 @@ import org.odk.collect.audiorecorder.recorder.Output
 import org.odk.collect.audiorecorder.recorder.Recorder
 import org.odk.collect.audiorecorder.recording.AudioRecorder
 import org.odk.collect.audiorecorder.recording.AudioRecorderFactory
-import org.odk.collect.audiorecorder.recording.AudioRecorderService
 import org.odk.collect.audiorecorder.recording.AudioRecorderTest
 import org.odk.collect.audiorecorder.recording.MicInUseException
 import org.odk.collect.audiorecorder.support.FakeRecorder
 import org.odk.collect.audiorecorder.testsupport.RobolectricApplication
 import org.odk.collect.testshared.FakeScheduler
-import org.robolectric.Robolectric
-import org.robolectric.Shadows.shadowOf
+import org.odk.collect.testshared.RobolectricHelpers
 import java.io.File
 
 @RunWith(AndroidJUnit4::class)
@@ -42,13 +41,7 @@ class ForegroundServiceAudioRecorderTest : AudioRecorderTest() {
     }
 
     override fun runBackground() {
-        while (shadowOf(application).peekNextStartedService() != null) {
-            val serviceIntent = shadowOf(application).nextStartedService
-            assertThat(serviceIntent.component?.className, equalTo(AudioRecorderService::class.qualifiedName))
-            Robolectric.buildService(AudioRecorderService::class.java, serviceIntent)
-                .create()
-                .startCommand(0, 0)
-        }
+        RobolectricHelpers.runServices(true)
     }
 
     override fun getLastRecordedFile(): File? {
@@ -68,6 +61,11 @@ class ForegroundServiceAudioRecorderTest : AudioRecorderTest() {
                 }
             }
         )
+    }
+
+    @After
+    fun clearServices() {
+        RobolectricHelpers.clearServices()
     }
 
     @Test

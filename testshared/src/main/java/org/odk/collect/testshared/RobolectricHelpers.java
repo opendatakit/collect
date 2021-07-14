@@ -1,5 +1,7 @@
 package org.odk.collect.testshared;
 
+import android.app.Application;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.media.MediaMetadataRetriever;
 import android.os.Bundle;
@@ -14,6 +16,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentFactory;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.testing.FragmentScenario;
+import androidx.lifecycle.Lifecycle;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.test.core.app.ApplicationProvider;
 
@@ -24,12 +27,16 @@ import org.robolectric.shadows.ShadowMediaMetadataRetriever;
 import org.robolectric.shadows.ShadowMediaPlayer;
 import org.robolectric.shadows.util.DataSource;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static android.os.Looper.getMainLooper;
 import static org.robolectric.Shadows.shadowOf;
 
 public class RobolectricHelpers {
+
+    public static Map<Class, ServiceScenario> services = new HashMap<>();
 
     private RobolectricHelpers() {
     }
@@ -126,5 +133,63 @@ public class RobolectricHelpers {
 
     public static void runLooper() {
         shadowOf(getMainLooper()).idle();
+    }
+
+    public static void clearServices() {
+        services.clear();
+    }
+
+    public static void runServices() {
+        runServices(false);
+    }
+
+    public static void runServices(boolean keepServices) {
+        Application application = ApplicationProvider.getApplicationContext();
+
+        // Run pending start commands
+        while (shadowOf(application).peekNextStartedService() != null) {
+            Intent intent = shadowOf(application).getNextStartedService();
+
+            Class serviceClass;
+            try {
+                serviceClass = Class.forName(intent.getComponent().getClassName());
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+
+            if (keepServices) {
+                if (services.containsKey(serviceClass)) {
+                    services.get(serviceClass).startWithNewIntent(intent);
+                } else {
+                    ServiceScenario serviceController = ServiceScenario.launch(serviceClass, intent);
+                    services.put(serviceClass, serviceController);
+                }
+            } else {
+                ServiceScenario.launch(serviceClass, intent);
+            }
+        }
+
+        // Run pending stops - only need to stop previously started services
+        if (keepServices) {
+            while (true) {
+                Intent intent = shadowOf(application).getNextStoppedService();
+                if (intent == null) {
+                    break;
+                }
+
+                Class serviceClass;
+                try {
+                    serviceClass = Class.forName(intent.getComponent().getClassName());
+                } catch (ClassNotFoundException e) {
+                    throw new RuntimeException(e);
+                }
+
+
+                if (services.containsKey(serviceClass)) {
+                    services.get(serviceClass).moveToState(Lifecycle.State.DESTROYED);
+                    services.remove(serviceClass);
+                }
+            }
+        }
     }
 }

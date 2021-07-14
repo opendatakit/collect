@@ -9,6 +9,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.lifecycle.Observer
+import org.odk.collect.androidshared.ui.ReturnToAppActivity
 import org.odk.collect.audiorecorder.R
 import org.odk.collect.audiorecorder.recording.RecordingSession
 import org.odk.collect.strings.format.formatLength

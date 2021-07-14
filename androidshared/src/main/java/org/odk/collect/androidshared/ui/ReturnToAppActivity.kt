@@ -1,4 +1,4 @@
-package org.odk.collect.audiorecorder.recording.internal
+package org.odk.collect.androidshared.ui
 
 import android.app.Activity
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.os.Bundle
  * intent of a notification so clicking it will effectively return to the screen the user
  * was last on (knowing what that Activity was).
  */
-internal class ReturnToAppActivity : Activity() {
+class ReturnToAppActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -2,4 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.odk.collect.androidshared">
 
+    <application>
+        <activity android:name="org.odk.collect.androidshared.ui.ReturnToAppActivity" />
+    </application>
 </manifest>

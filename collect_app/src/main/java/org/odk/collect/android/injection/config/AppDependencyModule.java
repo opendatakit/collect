@@ -107,6 +107,7 @@ import org.odk.collect.android.utilities.ExternalWebPageHelper;
 import org.odk.collect.android.utilities.FileProvider;
 import org.odk.collect.android.utilities.FormsDirDiskFormsSynchronizer;
 import org.odk.collect.android.utilities.FormsRepositoryProvider;
+import org.odk.collect.android.utilities.IconUtils;
 import org.odk.collect.android.utilities.InstancesRepositoryProvider;
 import org.odk.collect.android.utilities.LaunchState;
 import org.odk.collect.android.utilities.MediaUtils;
@@ -121,6 +122,8 @@ import org.odk.collect.async.Scheduler;
 import org.odk.collect.audiorecorder.recording.AudioRecorder;
 import org.odk.collect.audiorecorder.recording.AudioRecorderFactory;
 import org.odk.collect.forms.FormsRepository;
+import org.odk.collect.location.tracker.ForegroundServiceLocationTracker;
+import org.odk.collect.location.tracker.LocationTracker;
 import org.odk.collect.projects.ProjectsRepository;
 import org.odk.collect.projects.SharedPreferencesProjectsRepository;
 import org.odk.collect.shared.strings.UUIDGenerator;
@@ -602,5 +605,11 @@ public class AppDependencyModule {
     @Provides
     public ProjectResetter providesProjectResetter(StoragePathProvider storagePathProvider, PropertyManager propertyManager, SettingsProvider settingsProvider, InstancesRepositoryProvider instancesRepositoryProvider, FormsRepositoryProvider formsRepositoryProvider) {
         return new ProjectResetter(storagePathProvider, propertyManager, settingsProvider, instancesRepositoryProvider, formsRepositoryProvider);
+    }
+
+    @Provides
+    public LocationTracker providesLocationTracker(Application application) {
+        ForegroundServiceLocationTracker.setNotificationIcon(IconUtils.getNotificationAppIcon());
+        return new ForegroundServiceLocationTracker(application);
     }
 }

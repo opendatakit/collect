@@ -563,6 +563,12 @@
     <!-- Name of an action button -->
     <string name="view_data">View Saved Form</string>
 
+    <!-- Name for the location tracking notifications. Will be seen in Android settings. -->
+    <string name="location_tracking_notification_channel_name">Location tracking</string>
+
+    <!-- Title for notification that lets user know their location is currently being tracked -->
+    <string name="location_tracking_notification_title">Tracking location…</string>
+
     <!--
     ##############################################
     # SEND FINALIZED FORM

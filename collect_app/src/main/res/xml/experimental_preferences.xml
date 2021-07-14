@@ -7,9 +7,4 @@
         app:iconSpaceReserved="false"
         app:title="@string/theme_magenta" />
 
-    <SwitchPreference
-        android:key="use_location_tracker"
-        app:iconSpaceReserved="false"
-        app:title="Use location tracker service" />
-
 </PreferenceScreen>

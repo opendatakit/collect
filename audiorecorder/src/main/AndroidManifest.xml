@@ -6,7 +6,6 @@
 
     <application>
         <service android:name=".recording.AudioRecorderService" />
-        <activity android:name=".recording.internal.ReturnToAppActivity" />
     </application>
 
 </manifest>

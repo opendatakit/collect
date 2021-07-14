@@ -43,7 +43,7 @@ public class LocationClientProvider {
     /**
      * Sets the LocationClient.  For use in tests only.
      */
-    public static void setTestClient(@NonNull LocationClient testClient) {
+    public static void setTestClient(LocationClient testClient) {
         LocationClientProvider.testClient = testClient;
     }
 }
