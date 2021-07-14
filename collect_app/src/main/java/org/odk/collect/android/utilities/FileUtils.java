@@ -18,8 +18,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.net.Uri;
 import android.webkit.MimeTypeMap;
+
+import androidx.exifinterface.media.ExifInterface;
 
 import org.apache.commons.io.IOUtils;
 import org.javarosa.core.model.Constants;
@@ -86,6 +89,9 @@ public class FileUtils {
 
     /** Valid XML stub that can be parsed without error. */
     public static final String STUB_XML = "<?xml version='1.0' ?><stub />";
+
+    private static final Integer[] EXIF_ORIENTATION_ROTATIONS =
+            {ExifInterface.ORIENTATION_ROTATE_90, ExifInterface.ORIENTATION_ROTATE_180, ExifInterface.ORIENTATION_ROTATE_270};
 
     static int bufSize = 16 * 1024; // May be set by unit test
 
@@ -172,6 +178,51 @@ public class FileUtils {
                     screenHeight, screenWidth, scale, bitmap.getHeight(), bitmap.getWidth());
         }
         return bitmap;
+    }
+
+
+    /**
+     * While copying the file, apply the exif rotation of sourceFile to destinationFile
+     * so that sourceFile with EXIF has same orientation as destinationFile without EXIF
+     */
+    public static void copyImageAndApplyExifRotation(File sourceFile, File destFile) {
+        ExifInterface sourceFileExif = null;
+        try {
+            sourceFileExif = new ExifInterface(sourceFile);
+        } catch (IOException e) {
+            Timber.w(e);
+        }
+        if (sourceFileExif == null ||
+                !Arrays.asList(EXIF_ORIENTATION_ROTATIONS)
+                        .contains(sourceFileExif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_UNDEFINED))) {
+            // Source Image doesn't have any EXIF Rotations, so a normal file copy will suffice
+             copyFile(sourceFile, destFile);
+        } else {
+            Bitmap sourceImage = getBitmap(sourceFile.getAbsolutePath(), new BitmapFactory.Options());
+            int orientation = sourceFileExif.getAttributeInt(ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_UNDEFINED);
+            switch (orientation) {
+                case ExifInterface.ORIENTATION_ROTATE_90:
+                    rotateBitmapAndSaveToFile(sourceImage, 90, destFile.getAbsolutePath());
+                    break;
+                case ExifInterface.ORIENTATION_ROTATE_180:
+                    rotateBitmapAndSaveToFile(sourceImage, 180, destFile.getAbsolutePath());
+                    break;
+                case ExifInterface.ORIENTATION_ROTATE_270:
+                    rotateBitmapAndSaveToFile(sourceImage, 270, destFile.getAbsolutePath());
+                    break;
+            }
+        }
+    }
+
+    private static void rotateBitmapAndSaveToFile(Bitmap image, int degrees, String filePath) {
+        try {
+            Matrix matrix = new Matrix();
+            matrix.postRotate(degrees);
+            image = Bitmap.createBitmap(image, 0, 0, image.getWidth(), image.getHeight(), matrix, true);
+        } catch (OutOfMemoryError e) {
+            Timber.w(e);
+        }
+        saveBitmapToFile(image, filePath);
     }
 
     public static String copyFile(File sourceFile, File destFile) {

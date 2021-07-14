@@ -1,13 +1,9 @@
 package org.odk.collect.android.widgets;
 
 import android.content.Intent;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.view.View;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
-import androidx.core.util.Pair;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import net.bytebuddy.utility.RandomString;
@@ -18,7 +14,6 @@ import org.junit.runner.RunWith;
 import org.odk.collect.android.R;
 import org.odk.collect.android.activities.DrawActivity;
 import org.odk.collect.android.formentry.questions.QuestionDetails;
-import org.odk.collect.android.support.MockFormEntryPromptBuilder;
 import org.odk.collect.android.utilities.QuestionMediaManager;
 import org.odk.collect.android.widgets.base.FileWidgetTest;
 import org.odk.collect.android.widgets.support.FakeQuestionMediaManager;
@@ -27,15 +22,9 @@ import org.odk.collect.shared.TempFiles;
 
 import java.io.File;
 
-import static java.util.Collections.singletonList;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.notNullValue;
 import static org.mockito.Mockito.when;
-import static org.odk.collect.android.support.CollectHelpers.overrideReferenceManager;
-import static org.odk.collect.android.support.CollectHelpers.setupFakeReferenceManager;
-import static org.robolectric.Shadows.shadowOf;
 
 /**
  * @author James Knight
@@ -99,43 +88,4 @@ public class DrawWidgetTest extends FileWidgetTest<DrawWidget> {
         assertThat(getSpyWidget().drawButton.getVisibility(), is(View.GONE));
     }
 
-    @Test
-    public void whenPromptHasDefaultAnswer_showsInImageView() throws Exception {
-        String imagePath = File.createTempFile("default", ".bmp").getAbsolutePath();
-        overrideReferenceManager(setupFakeReferenceManager(singletonList(
-                new Pair<>(DEFAULT_IMAGE_ANSWER, imagePath)
-        )));
-
-        formEntryPrompt = new MockFormEntryPromptBuilder()
-                .withAnswerDisplayText(DEFAULT_IMAGE_ANSWER)
-                .build();
-
-        DrawWidget widget = createWidget();
-        ImageView imageView = widget.getImageView();
-        assertThat(imageView, notNullValue());
-        Drawable drawable = imageView.getDrawable();
-        assertThat(drawable, notNullValue());
-
-        String loadedPath = shadowOf(((BitmapDrawable) drawable).getBitmap()).getCreatedFromPath();
-        assertThat(loadedPath, equalTo(imagePath));
-    }
-
-    @Test
-    public void whenPromptHasCurrentAnswer_showsInImageView() throws Exception {
-        String imagePath = File.createTempFile("current", ".bmp").getAbsolutePath();
-        currentFile = new File(imagePath);
-
-        formEntryPrompt = new MockFormEntryPromptBuilder()
-                .withAnswerDisplayText(USER_SPECIFIED_IMAGE_ANSWER)
-                .build();
-
-        DrawWidget widget = createWidget();
-        ImageView imageView = widget.getImageView();
-        assertThat(imageView, notNullValue());
-        Drawable drawable = imageView.getDrawable();
-        assertThat(drawable, notNullValue());
-
-        String loadedPath = shadowOf(((BitmapDrawable) drawable).getBitmap()).getCreatedFromPath();
-        assertThat(loadedPath, equalTo(imagePath));
-    }
 }
